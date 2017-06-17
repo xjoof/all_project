@@ -47,11 +47,12 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\neural_ai;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -61,12 +62,13 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\neural_ai;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -80,9 +82,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\neural_ai\neural_ai_main.cpp" />
+    <ClCompile Include="..\neural_ai\neurons\neuron_arithmetics.cpp" />
+    <ClCompile Include="..\neural_ai\neurons\neuron_string.cpp" />
+    <ClCompile Include="..\neural_ai\neuron_interface.cpp" />
     <ClCompile Include="..\neural_ai\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\neural_ai\neurons\neuron_arithmetics.h" />
+    <ClInclude Include="..\neural_ai\neurons\neuron_string.h" />
+    <ClInclude Include="..\neural_ai\neuron_interface.h" />
     <ClInclude Include="..\neural_ai\stdafx.h" />
     <ClInclude Include="..\neural_ai\targetver.h" />
   </ItemGroup>
