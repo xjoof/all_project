@@ -81,6 +81,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\neural_ai\auto_learning.cpp" />
     <ClCompile Include="..\neural_ai\neural_ai_main.cpp" />
     <ClCompile Include="..\neural_ai\neurons\neuron_arithmetics.cpp" />
     <ClCompile Include="..\neural_ai\neurons\neuron_string.cpp" />
@@ -88,6 +89,7 @@
     <ClCompile Include="..\neural_ai\stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\neural_ai\auto_learning.h" />
     <ClInclude Include="..\neural_ai\neurons\neuron_arithmetics.h" />
     <ClInclude Include="..\neural_ai\neurons\neuron_string.h" />
     <ClInclude Include="..\neural_ai\neuron_interface.h" />
