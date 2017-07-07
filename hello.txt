@@ -2,9 +2,9 @@ git flow test
 
 edit in develop branch
 
-edit in develop branch-20170706-23:47
+modify in develop branch-20170707-22:23
 
-edit in develop branch-20170707-21:58
+modify in develop branch-20170707-22:24
 
 modify in develop branch-20170707-22:10
 
